@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>Laura O'Malley</title>
+        
+        <link href="css/sticky_portfolio.css" type="text/css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body class="home">
+        <div class="container_home">
+         <div class="content_home">  
+        <header>
+            <div class="header_image_home"></div>
+        </header>
+        
+        
+        <nav>
+                
+            <ul class=nav>    
+                <li class="nav"><a class="nav" id="active_nav_link" href="index.html"><img class="logo" src="images/l(a)ogo_orange.svg"></a></li>
+    
+                <li class="nav"><a class="nav" href="about_me_sticky.html">About Me</a></li>
+                
+                <li class="nav"><a class="nav" href="resume_sticky.html">Resume</a></li>
+
+                <li class="nav"><a class="nav" href="please_work_sticky_nav.html">Writing Samples</a></li>
+
+                <li class="nav"><a class="nav" href="contact_sticky.html">Contact</a></li>
+            </ul>
+          
+        </nav>
+        
+        <div class="home_page_name">
+            <figure class="home_page_name">
+                <img src="images/orange_sig.svg" alt="Laura O'Malley's signature in orange">
+                <figcaption class="home_page_name_caption"><i>Student, Writer, Editor</i></figcaption>
+            </figure>
+        </div>
+        <aside>
+                <p><b>Days until Graduation</b></p>
+                <p> (HIRE ME!!)</p>
+                <hr>
+                <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 8, 2020 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+            </aside>
+        
+            </div> 
+             
+        <footer>
+            <div="social_media">
+                <a href="https://www.linkedin.com/in/laura-o-malley-59a854161/" class="fa fa-linkedin"></a>
+                
+                <a href="mailto:lomalley@umass.edu"  class="fa fa-envelope"></a>
+            </div>
+        </footer>
+            
+        </div>
+    </body>
+
+
+</html>
